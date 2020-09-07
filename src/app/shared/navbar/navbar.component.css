@@ -1,0 +1,15 @@
+.navbar-brand {
+  cursor: pointer;
+}
+
+.bg-light {
+  background-color: #1f71ad !important;
+}
+
+.fa {
+  font-size: 28px;
+}
+
+.nav-link nav-item {
+  color: red
+}

@@ -1,0 +1,70 @@
+<div id="main">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+    <a class="navbar-brand" *ngIf="isSideNavOpen" (click)="isOpen()">&#9776;</a>
+    <a class="navbar-brand" *ngIf="!isSideNavOpen" (click)="isClose()"
+      >&#9776;</a
+    >
+
+    <!-- Step 3: Toggle the value of the property when the toggler button is clicked. -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="isMenuCollapsed = !isMenuCollapsed"
+    >
+      &#9776;
+    </button>
+
+    <!-- Step 2: Add the ngbCollapse directive to the element below. -->
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <a href="#"><i class="fa fa-search"></i></a>
+        <li class="nav-item active">
+          <!-- Step 4: Close the menu when a link is clicked. -->
+          <a
+            class="nav-link nav-item"
+            [routerLink]="'.'"
+            (click)="isMenuCollapsed = true"
+            >Dashboard</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="'.'"
+            (click)="isMenuCollapsed = true"
+            >Play Area</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="'.'"
+            (click)="isMenuCollapsed = true"
+            >Widgets</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="'.'"
+            (click)="isMenuCollapsed = true"
+            >Templates</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="'.'"
+            (click)="isMenuCollapsed = true"
+            >Data Locker</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <app-core-layout></app-core-layout>
+</div>
+
+<app-sidebar></app-sidebar>
+
+<app-widget-bar></app-widget-bar>

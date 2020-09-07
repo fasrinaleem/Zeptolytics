@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.container-details {
+  width: 33.33%;
+  height: 100px;
+  background-color: teal;
+  margin-bottom: 10px;
+}
+
+.sales {
+  /* background-color: red; */
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.line-bar {
+  /* background-color: green; */
+}
+
+.chart {
+  /* margin: 5px; */
+  color: #a3a29e;
+  /* background-color: blue; */
+}
+
+.test {
+  flex-flow: row;
+}
+
+.pad {
+  margin-right: 10px;
+}
+
+.bar {
+  /* background-color: fuchsia; */
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 100%;
+  }
+}
