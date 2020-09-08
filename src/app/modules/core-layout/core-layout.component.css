@@ -9,7 +9,8 @@
 .container-details {
   width: 33.33%;
   height: 100px;
-  background-color: teal;
+  color: #a3a29e;
+  /* background-color: teal; */
   margin-bottom: 10px;
 }
 

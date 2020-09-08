@@ -17,7 +17,9 @@
     <!-- Step 2: Add the ngbCollapse directive to the element below. -->
     <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
       <ul class="navbar-nav">
-        <a href="#"><i class="fa fa-search"></i></a>
+        <li class="nav-item icon">
+          <a href="#"> <i class="fa fa-search" aria-hidden="true"></i> </a>
+        </li>
         <li class="nav-item active">
           <!-- Step 4: Close the menu when a link is clicked. -->
           <a
@@ -29,7 +31,7 @@
         </li>
         <li class="nav-item">
           <a
-            class="nav-link"
+            class="nav-link text-white"
             [routerLink]="'.'"
             (click)="isMenuCollapsed = true"
             >Play Area</a
@@ -58,6 +60,15 @@
             (click)="isMenuCollapsed = true"
             >Data Locker</a
           >
+        </li>
+        <li class="nav-item icon">
+          <a href="#"> <i class="fa fa-user-circle" aria-hidden="true"></i> </a>
+        </li>
+        <li class="nav-item icon">
+          <a href="#"> <i class="fa fa-bell-o" aria-hidden="true"></i> </a>
+        </li>
+        <li class="nav-item icon">
+          <a href="#"> <i class="fa fa-ellipsis-v" aria-hidden="true"></i> </a>
         </li>
       </ul>
     </div>

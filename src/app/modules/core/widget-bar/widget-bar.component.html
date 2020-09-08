@@ -1,0 +1,51 @@
+<div id="myWidgetBar" (click)="openNav()" class="sidenav">
+  <div class="overflow-button">
+    <label ngbButtonLabel class="btn-primary"> Middle </label>
+  </div>
+  <div class="column1">
+    <div class="row1"></div>
+    <div class="row1">
+      Row 2
+      <div class="column-piechart">
+        <ngx-charts-pie-chart
+          [view]="viewPieChart"
+          [scheme]="colorSchemePieChart"
+          [results]="singlePieChart"
+          [legend]="showLegendPieChart"
+          [explodeSlices]="explodeSlicesPieChart"
+          [labels]="showLabelsPieChart"
+          [doughnut]="doughnutPieChart"
+          [gradient]="gradient"
+          (select)="onSelect($event)"
+        >
+        </ngx-charts-pie-chart>
+      </div>
+      <div class="column-barchart">
+        <ngx-charts-bar-vertical-2d
+          [view]="viewMultiBarChart"
+          [scheme]="colorSchemeMultiBarChart"
+          [results]="multiBarChart2"
+          [gradient]="gradientMultiBarChart"
+          [xAxis]="showXAxisMultiBarChart"
+          [yAxis]="showYAxisMultiBarChart"
+          [legend]="showLegendMultiBarChart"
+          [showXAxisLabel]="showXAxisLabelMultiBarChart"
+          [showYAxisLabel]="showYAxisLabelMultiBarChart"
+          (select)="onSelect($event)"
+        >
+        </ngx-charts-bar-vertical-2d>
+      </div>
+    </div>
+    <div class="row1">
+      Row 3
+      <div class="column1">Col 1</div>
+      <div class="column1">Col 2</div>
+    </div>
+    <div class="row1">Row 4</div>
+    <div class="row1">
+      Row 5
+      <div class="column1">Col 1</div>
+      <div class="column1">Col 2</div>
+    </div>
+  </div>
+</div>

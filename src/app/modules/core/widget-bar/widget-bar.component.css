@@ -1,6 +1,6 @@
 .sidenav {
   height: 100%;
-  width: 20px;
+  width: 35px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -12,6 +12,19 @@
 }
 
 .overflow-button {
-
   top: 50%;
+}
+
+
+.chart {
+  /* margin: 5px; */
+  color: #a3a29e;
+  width: 50%;
+  /* background-color: blue; */
+}
+
+.column-piechart {}
+
+.column-barchart {
+  align-items: center;
 }
