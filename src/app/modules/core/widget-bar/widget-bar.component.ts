@@ -30,7 +30,7 @@ export class WidgetBarComponent implements OnInit {
   //Bar Chart
   singleBarChart: any[];
 
-  viewBarChart: any[] = [150, 100];
+  viewBarChart: any[] = [300, 180];
 
   // options
   showXAxisBarChart = false;
@@ -51,7 +51,6 @@ export class WidgetBarComponent implements OnInit {
   multiBarChart2: any[];
 
   viewMultiBarChart: any[] = [250, 200];
-
   // options
   showXAxisMultiBarChart = true;
   showYAxisMultiBarChart = true;
@@ -75,7 +74,7 @@ export class WidgetBarComponent implements OnInit {
   ngOnInit(): void {
   }
   openNav() {
-    document.getElementById("myWidgetBar").style.width = "250px";
+    document.getElementById("myWidgetBar").style.width = "600px";
   }
 
   closeNav() {

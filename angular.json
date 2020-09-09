@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "zeptolytics-dashboard"
+  "defaultProject": "zeptolytics-dashboard",
+  "cli": {
+    "analytics": "af8a75c5-dce0-4c66-ae8b-00b53973295f"
+  }
 }

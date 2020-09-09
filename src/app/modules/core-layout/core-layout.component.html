@@ -6,43 +6,65 @@
           <i class="fa fa-repeat m" aria-hidden="true"></i> Sales Dashboard
         </h2>
       </div>
-      <div class="container-details"></div>
-      <div class="container-details"></div>
+      <div class="container-details">
+        <p>Wed 10:24 a.m. 31st August 2016</p>
+      </div>
+      <div class="container-details">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+        <i class="fa fa-share-square-o" aria-hidden="true"></i>
+      </div>
     </div>
     <div class="column">
       <div class="row test">
         <div class="column pad">
           <div class="col-sm sales">
             <div class="shadow p-3 mb-5 bg-white rounded">
-              YTD Sales
-              <h2>$ 128.7 MN</h2>
-              <i class="fas fa-user-circle"></i>
+              <h3>
+                YTD Sales <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+              </h3>
+
+              <h1>$ 128.7 MN</h1>
             </div>
           </div>
           <div class="col-sm bar">
-            <div class="shadow p-3 mb-5 bg-white rounded">
-              <ngx-charts-bar-vertical-2d
-                [view]="viewMultiBarChart"
-                [scheme]="colorSchemeMultiBarChart"
-                [results]="multiBarChart2"
-                [gradient]="gradientMultiBarChart"
-                [xAxis]="showXAxisMultiBarChart"
-                [yAxis]="showYAxisMultiBarChart"
-                [legend]="showLegendMultiBarChart"
-                [showXAxisLabel]="showXAxisLabelMultiBarChart"
-                [showYAxisLabel]="showYAxisLabelMultiBarChart"
-                (select)="onSelect($event)"
-              >
-              </ngx-charts-bar-vertical-2d>
+            <div>
+              <p>
+                Annual Sales by Gender
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+              </p>
             </div>
+            <ngx-charts-bar-vertical-2d
+              [view]="viewMultiBarChart"
+              [scheme]="colorSchemeMultiBarChart"
+              [results]="multiBarChart2"
+              [gradient]="gradientMultiBarChart"
+              [xAxis]="showXAxisMultiBarChart"
+              [yAxis]="showYAxisMultiBarChart"
+              [legend]="showLegendMultiBarChart"
+              [showXAxisLabel]="showXAxisLabelMultiBarChart"
+              [showYAxisLabel]="showYAxisLabelMultiBarChart"
+              (select)="onSelect($event)"
+            >
+            </ngx-charts-bar-vertical-2d>
           </div>
         </div>
         <div class="column">
           <div class="row">
-            <div class="shadow p-3 mb-5 bg-white rounded">
+            <div class="shadow p-3 mb-5 bg-white rounded" id="sales">
               <div class="col-sm chart">
                 <div>
-                  <p>Sales by Location</p>
+                  <p>
+                    Sales by Location<i
+                      class="fa fa-star"
+                      aria-hidden="true"
+                    ></i>
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </p>
                 </div>
                 <ngx-charts-pie-chart
                   [view]="viewPieChart"
@@ -61,6 +83,14 @@
 
             <div class="shadow p-3 mb-5 bg-white rounded">
               <div class="col-sm chart">
+                <div>
+                  <p>
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    Sales Funnel<i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </p>
+                </div>
                 <ngx-charts-bar-horizontal
                   [view]="viewBarChart"
                   [scheme]="colorSchemeBarChart"
@@ -79,10 +109,16 @@
               </div>
             </div>
           </div>
-          <div class="col-sm line-bar">
-            <div class="shadow p-3 mb-5 bg-white rounded">
-              readasd readasd readasd readasd readasd readasd readasd readasd
-              readasd readasd readasd
+          <div class="shadow p-3 mb-5 bg-white rounded">
+            <div class="col-sm line-bar">
+              <div>
+                <p>
+                  Monthly Sales Growth
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </p>
+              </div>
             </div>
           </div>
         </div>

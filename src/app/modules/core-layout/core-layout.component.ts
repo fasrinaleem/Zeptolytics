@@ -63,6 +63,7 @@ export class CoreLayoutComponent implements OnInit {
     domain: ['#1f71ad', '#fc9003']
   };
 
+
   constructor() {
     Object.assign(this, { singlePieChart, singleBarChart, multiBarChart, multiBarChart2 })
   }

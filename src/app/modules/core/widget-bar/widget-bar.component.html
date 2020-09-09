@@ -1,12 +1,15 @@
 <div id="myWidgetBar" (click)="openNav()" class="sidenav">
-  <div class="overflow-button">
-    <label ngbButtonLabel class="btn-primary"> Middle </label>
+  <div class="search-container">
+    <a href="#" style="background-color: transparent" class="search-icon"
+      ><span class="material-icons" style="color: rgba(0, 0, 255, 0.363)">
+        search
+      </span></a
+    >
+    <input type="text" id="search-bar" placeholder="Search" />
   </div>
-  <div class="column1">
-    <div class="row1"></div>
-    <div class="row1">
-      Row 2
-      <div class="column-piechart">
+  <div>
+    <div class="row">
+      <div class="col-6">
         <ngx-charts-pie-chart
           [view]="viewPieChart"
           [scheme]="colorSchemePieChart"
@@ -20,7 +23,8 @@
         >
         </ngx-charts-pie-chart>
       </div>
-      <div class="column-barchart">
+
+      <div class="col-6">
         <ngx-charts-bar-vertical-2d
           [view]="viewMultiBarChart"
           [scheme]="colorSchemeMultiBarChart"
@@ -36,16 +40,45 @@
         </ngx-charts-bar-vertical-2d>
       </div>
     </div>
-    <div class="row1">
-      Row 3
-      <div class="column1">Col 1</div>
-      <div class="column1">Col 2</div>
+    <div class="overflow-button">
+      <button class="btn-middle" id="middle" (click)="closeNav()">
+        Widget Bar
+      </button>
     </div>
-    <div class="row1">Row 4</div>
-    <div class="row1">
-      Row 5
-      <div class="column1">Col 1</div>
-      <div class="column1">Col 2</div>
+    <div class="row">
+      <div class="col-6">
+        <ngx-charts-bar-horizontal
+          [view]="viewBarChart"
+          [scheme]="colorSchemeBarChart"
+          [results]="singleBarChart"
+          [gradient]="gradient"
+          [xAxis]="showXAxisBarChart"
+          [yAxis]="showYAxisBarChart"
+          [legend]="showLegendBarChart"
+          [showXAxisLabel]="showXAxisLabelBarChart"
+          [showYAxisLabel]="showYAxisLabelBarChart"
+          [xAxisLabel]="xAxisLabelBarChart"
+          [yAxisLabel]="yAxisLabelBarChart"
+          (select)="onSelect($event)"
+        >
+        </ngx-charts-bar-horizontal>
+      </div>
+      <div class="col-6">
+        <ngx-charts-bar-vertical-2d
+          [view]="viewMultiBarChart"
+          [scheme]="colorSchemeMultiBarChart"
+          [results]="multiBarChart2"
+          [gradient]="gradientMultiBarChart"
+          [xAxis]="showXAxisMultiBarChart"
+          [yAxis]="showYAxisMultiBarChart"
+          [legend]="showLegendMultiBarChart"
+          [showXAxisLabel]="showXAxisLabelMultiBarChart"
+          [showYAxisLabel]="showYAxisLabelMultiBarChart"
+          (select)="onSelect($event)"
+        >
+        </ngx-charts-bar-vertical-2d>
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </div>
     </div>
   </div>
 </div>

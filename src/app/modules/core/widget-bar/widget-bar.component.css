@@ -5,7 +5,7 @@
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #111;
+  background-color: #878786;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -18,7 +18,7 @@
 
 .chart {
   /* margin: 5px; */
-  color: #a3a29e;
+  color: #7a7356;
   width: 50%;
   /* background-color: blue; */
 }
@@ -27,4 +27,29 @@
 
 .column-barchart {
   align-items: center;
+}
+
+.sidenav .search-container {
+  position: relative;
+}
+
+.sidenav .search-icon {
+  position: absolute;
+  left: 200px;
+  top: 10px;
+}
+
+#search-bar {
+  display: block;
+  margin: 0 auto;
+  height: 35px;
+  border-radius: 20px;
+  padding-left: 250px;
+}
+
+#middle {
+  transform: rotateZ(-90deg);
+  color: red;
+  border-radius: 20px;
+  background-color: #a3a29e;
 }
